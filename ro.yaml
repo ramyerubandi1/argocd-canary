@@ -11,7 +11,11 @@ spec:
     spec:
       containers:
       - name: calculator-app
-        image: httpd:2.4.56
+        image: 024848485298.dkr.ecr.us-west-2.amazonaws.com/microservicea:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 5000
+          
   selector:
     matchLabels:
       app: calculator-app
