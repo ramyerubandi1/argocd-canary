@@ -9,4 +9,4 @@ spec:
     app: calculator-app
   ports:
     - port: 8090
-      targetPort: 5000
+      targetPort: 4000
