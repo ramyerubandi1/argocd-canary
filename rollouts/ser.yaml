@@ -4,7 +4,7 @@ metadata:
   name: calculator-svc
   namespace: calculator
 spec:
-  type: LoadBalancer
+  type: ClusterIP
   selector:
     app: calculator-app
   ports:
